@@ -7,55 +7,55 @@ body {
 /* ----  Font Schema ---- */
 
 .hero-title {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: 900;
   font-style: normal;
 }
 
 .title-lg {
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: 600;
   font-style: normal;
 }
 
 .title-mdx {
-  font-size: 0.8rem;
+  font-size: 1.5rem;
   font-weight: 500;
   font-style: normal;
 }
 
 .title-md {
-  font-size: 0.7rem;
+  font-size: 1rem;
   font-weight: 500;
   font-style: normal;
 }
 
 .title-sm {
-  font-size: 0.5rem;
+  font-size: 0.7rem;
   font-weight: 400;
   font-style: normal;
 }
 
 .p-lg {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: 300;
   font-style: normal;
 }
 
 .p-md {
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   font-weight: 200;
   font-style: normal;
 }
 
 .p-sm {
-  font-size: 0.5rem;
+  font-size: 0.6rem;
   font-weight: 100;
   font-style: normal;
 }
 
 em {
-  font-size: 0.5rem;
+  font-size: 0.6rem;
   font-weight: 400;
   font-style: italic;
 }
@@ -96,4 +96,46 @@ em {
 
 .special-color {
   color: #e5383b;
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+/* --- Styling Html | 
+grid-area: 
+row-start / col-start / 
+row-end /col-end
+  -- */
+
+body {
+  display: grid;
+  width: auto;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 0.3rem;
+}
+
+/* --- NavBar --- */
+
+nav {
+  grid-area: 1 / 1 / 1 / 13;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-logo {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.nav-list {
+  flex-grow: 3;
+  display: inline-flex;
+  list-style-type: none;
+  justify-content: flex-end;
+}
+
+li {
+  flex-basis: 15%;
+  text-align: center;
 }
