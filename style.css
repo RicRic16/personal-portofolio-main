@@ -1,0 +1,99 @@
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0px;
+}
+
+/* ----  Font Schema ---- */
+
+.hero-title {
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.title-lg {
+  font-size: 1rem;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.title-mdx {
+  font-size: 0.8rem;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.title-md {
+  font-size: 0.7rem;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.title-sm {
+  font-size: 0.5rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.p-lg {
+  font-size: 1rem;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.p-md {
+  font-size: 0.6rem;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.p-sm {
+  font-size: 0.5rem;
+  font-weight: 100;
+  font-style: normal;
+}
+
+em {
+  font-size: 0.5rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* --- Color Schema --- */
+
+.primary-color {
+  background-color: #252422;
+}
+
+.secondary-color {
+  background-color: #ccc5b9;
+}
+
+.terziary-color {
+  background-color: #eb5e28;
+}
+
+.surface-white {
+  background-color: #ffffff;
+}
+
+.surface-grey {
+  background-color: #f5f3f4;
+}
+
+.Onprimary-color {
+  color: #fffcf2;
+}
+
+.Onsecondary-color {
+  color: #403d39;
+}
+
+.Onterziary-color {
+  color: #fffcf2;
+}
+
+.special-color {
+  color: #e5383b;
+}
