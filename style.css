@@ -2,6 +2,7 @@ html,
 body {
   font-family: "Roboto", sans-serif;
   margin: 0px;
+  box-sizing: border-box;
 }
 
 /* ----  Font Schema ---- */
@@ -43,13 +44,13 @@ body {
 }
 
 .p-md {
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 200;
   font-style: normal;
 }
 
 .p-sm {
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   font-weight: 100;
   font-style: normal;
 }
@@ -110,8 +111,9 @@ row-end /col-end
 
 body {
   display: grid;
-  width: auto;
+  width: 100%;
   grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 80px 500px 500px 300px 300px 100px;
   column-gap: 0.3rem;
 }
 
@@ -142,30 +144,32 @@ li {
 
 /* --- Main Banner --- */
 
-.main-banner {
-  grid-area: 2 / 1 / 2 / 13;
+.banner-1 {
+  grid-area: 2 / 1 / 3 / 3;
   display: inline-flex;
+  flex-direction: column;
   justify-content: center;
-  height: 500px;
-  margin: 10px;
+  margin-left: 5px;
   border: 2px red solid;
 }
 
-.banner-1,
-.item-1 {
-  flex: 1 1 700px;
-  border: 2px red solid;
-}
-
-.banner-2,
-.item-2,
-.img {
-  flex: 3 1 700px;
+.banner-2 {
+  grid-area: 2 / 3 / 3 / 13;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 5px;
   border: 2px red solid;
 }
 
 .img-1 {
-  height: 100%;
+  max-width: 600px;
+  max-height: 400px;
   z-index: -1;
+  border-radius: 20px;
+}
+
+.item-1 {
+  margin: 0px;
   border: 2px red solid;
 }
