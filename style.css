@@ -141,3 +141,31 @@ li {
 }
 
 /* --- Main Banner --- */
+
+.main-banner {
+  grid-area: 2 / 1 / 2 / 13;
+  display: inline-flex;
+  justify-content: center;
+  height: 500px;
+  margin: 10px;
+  border: 2px red solid;
+}
+
+.banner-1,
+.item-1 {
+  flex: 1 1 700px;
+  border: 2px red solid;
+}
+
+.banner-2,
+.item-2,
+.img {
+  flex: 3 1 700px;
+  border: 2px red solid;
+}
+
+.img-1 {
+  height: 100%;
+  z-index: -1;
+  border: 2px red solid;
+}
